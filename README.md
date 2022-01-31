@@ -53,6 +53,14 @@ JMusicBot supports all sources and formats supported by [lavaplayer](https://git
 ## Setup
 Please see the [Setup Page](https://jmusicbot.com/setup) to run this bot yourself!
 
+Some changes were made in order to make running a customized version of JMusicBot, named MelodyBot, easier.
+
+Changes from upstream:
+* ./install.sh will install:
+    * config.txt to /usr/local/etc/melodybot
+    * jar file, renamed with 0.36 to pass version check, to /usr/local/bin/melodybot
+    * openrc scripts to /etc/init.d/melodybot.sh (systemd compatibility not checked)
+
 ## Questions/Suggestions/Bug Reports
 **Please read the [Issues List](https://github.com/jagrosh/MusicBot/issues) before suggesting a feature**. If you have a question, need troubleshooting help, or want to brainstorm a new feature, please start a [Discussion](https://github.com/jagrosh/MusicBot/discussions). If you'd like to suggest a feature or report a reproducible bug, please open an [Issue](https://github.com/jagrosh/MusicBot/issues) on this repository. If you like this bot, be sure to add a star to the libraries that make this possible: [**JDA**](https://github.com/DV8FromTheWorld/JDA) and [**lavaplayer**](https://github.com/sedmelluq/lavaplayer)!
 

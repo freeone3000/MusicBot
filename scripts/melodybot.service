@@ -1,0 +1,14 @@
+[Unit]
+Description=MelodyBot
+
+[Service]
+DynamicUser=yes
+WorkingDirectory=/var/run
+Restart=always
+ExecStart=/usr/bin/java -Dnogui=true -Dconfig.file=/usr/local/etc/melodybot/config.txt -jar /usr/local/bin/melodybot/JMusicBot-0.36-All.jar
+StandardError=syslog
+StandardOutput=syslog
+SyslogIdentifier=melodybot
+
+[Install]
+WantedBy=multi-user.target
